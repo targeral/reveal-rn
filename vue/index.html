@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/reveal.css">
+    <link rel="stylesheet" href="../css/theme/black.css">
+    <link rel="stylesheet" href="../lib/css/zenburn.css">
+    <title>Document</title>
+    <style>
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            text-transform: capitalize!important;
+        }
+        img {
+/*                transform: scale(0.7) translateY(-292px);
+*/                width: 100%;
+                
+        }
+        .imgH {
+            width: 40%;
+            margin-top: -40px!important;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h2>基于前端MVVM的调查问卷应用</h2>
+                <p>答辩人：高博文</p>
+                <p>指导教师：崔鹏</p>
+            </section>
+            <section>
+                <h3>目录</h3>
+                <ul>
+                    <li>研究背景</li>
+                    <li>后端的技术及实现</li>
+                    <li>前端的技术及实现</li>
+                    <li>总结</li>
+                </ul>
+            </section>
+            <section data-markdown="./markdown/page1.md"
+                     data-separator="---#"
+                     data-separator-vertical="--#"
+                     data-separator-notes="^Note:"  
+                     data-charset="UTF-8">
+                     </section>
+            <section data-markdown="./markdown/page2.md"
+                     data-separator="---#"
+                     data-separator-vertical="--#"
+                     data-separator-notes="^Note:"  
+                     data-charset="UTF-8">
+                     </section>
+            <section data-markdown="./markdown/howcreatnative.md"
+                     data-separator="---#"
+                     data-separator-vertical="--#"
+                     data-separator-notes="^Note:"  
+                     data-charset="UTF-8">
+                     </section>
+            <section data-markdown="./markdown/makerndemo.md"
+                     data-separator="---#"
+                     data-separator-vertical="--#"
+                     data-separator-notes="^Note:"  
+                     data-charset="UTF-8">
+                     </section>
+        </div>
+    </div>
+    <script src="../lib/js/head.min.js"></script>
+    <script src="../js/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            markdown: {
+              smartypants: true,  
+            },
+            history: true,
+            dependencies: [
+                { src: '../plugin/markdown/marked.js' },
+                { src: '../plugin/markdown/markdown.js' },
+                { src: '../plugin/notes/notes.js', async: true },
+                { src: '../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+            ]
+        });
+    </script>
+    <script src="https://cdn.wilddog.com/sdk/js/2.5.6/wilddog.js"></script>
+    <script src="https://cdn.wilddog.com/sdk/js/2.5.6/wilddog-sync.js"></script>
+    <script src="controller.js"></script>
+</body>
+</html>
